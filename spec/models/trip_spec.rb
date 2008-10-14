@@ -18,4 +18,12 @@ describe Trip do
       @trip.should respond_to(:direction)
     end
   end
+
+  it 'can have stops' do
+    @trip.stops.should == []
+  end
+
+  it 'can have scheduled_stops' do
+    @trip.scheduled_stops.should == []
+  end
 end

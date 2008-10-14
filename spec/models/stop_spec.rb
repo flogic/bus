@@ -38,4 +38,12 @@ describe Stop do
       @stop.should respond_to(:location_type)
     end
   end
+
+  it 'can have scheduled trips' do
+    @stop.scheduled_trips.should == []
+  end
+
+  it 'can have trips' do
+    @stop.trips.should == []
+  end
 end
