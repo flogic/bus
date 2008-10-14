@@ -3,6 +3,7 @@ class CreateTrips < ActiveRecord::Migration
     create_table :trips do |t|
       t.string :head_sign
       t.integer :direction
+      t.timestamps
     end
   end
 
